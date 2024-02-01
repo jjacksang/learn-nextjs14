@@ -1,3 +1,9 @@
+import Navigation from '../components/navigation';
+
 export default function Tomato() {
-    return <h1>Hello NextJS@14</h1>;
+    return (
+        <div>
+            <Navigation />
+        </div>
+    );
 }
