@@ -22,3 +22,11 @@ Next JS 에서는 layout을 여러 개 설정 할 수 있고 폴더마다 layout
 여기서 특이점은  상단에 존재하는 layout부터 쌓아올리는 방식으로 호출된다는 것이다.</br>
 예를 들면 첫 layout이 호출되서 Home으로 표시한 layout이 있다면 그 안쪽에 존재하는 children안에 layout은 Home 위에 표시된다는 것이다.</br>
 단순하게 stack을 쌓는 방식으로 호출되는 것을 알 수 있었다.</br>
+
+<h2>2024.02.04</h2>
+오늘 강의를 통해 배운 새로운 것이 있다.</br>
+Next JS에서는 loading이라는 기능이 있고 앞 전에 이야기 했었던 layout, page, not-found와 같은 역할을 하는 것이다.</br>
+loading의 경우 각 page가 존재하는 곳에 생성하면 그 폴더안에 맞게 적용되고 이는 즉시 보여주지 않고 로딩을 진행시킬때 대신 나타나는 모습이 나타나게 된다.</br>
+또 다른 기능은 api와 소통하는 기능이었다.</br>
+앞전에 사용했던 api기능에서는 useState로 상태를 잡아주고 useEffect로 api를 response해서 fetch 해주어야 했지만 Next JS에서는 간단하게 const URL = ...() 선언해주고 async function으로 다시 윗쪽에 선언한 URL을 받아와 fetch작업을 한 후 함수로 보여주는 단에 전달해준다는 것이었다.</br>
+실제로 코드의 양이나 사용하는 시간또한 절약할 수 있었고 useState와 useEffect를 사용하지 않아도 되기 때문에 코드의 무게또한 줄었다고 볼 수 있었다.
