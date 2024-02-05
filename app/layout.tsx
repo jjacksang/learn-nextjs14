@@ -1,12 +1,13 @@
-import { Metadata } from 'next';
-import Navigation from '../components/navigation';
+import "../styles/global.css";
+import { Metadata } from "next";
+import Navigation from "../components/navigation";
 
 export const metadata: Metadata = {
     title: {
-        template: '%s | Next Movies',
-        default: 'Next Movies',
+        template: "%s | Next Movies",
+        default: "Next Movies",
     },
-    description: 'The best movies and best framework',
+    description: "The best movies and best framework",
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
